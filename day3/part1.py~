@@ -1,0 +1,10 @@
+from sys import argv
+_script, filename = argv
+input = [x.split(',') for x in open(filename).read().split('\n')]
+grid = dict()
+print(input)
+
+def addwire(wire):
+    (x, y) = (0, 0)
+    for move in wire:
+        
